@@ -34,6 +34,8 @@ body {
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: ease;
 	-webkit-animation-delay: .1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes slidein {
@@ -50,11 +52,35 @@ body {
 	}
 }
 
+.container {
+	width: 320px;
+	height: 100px;
+	background: skyblue;
+}
+
+.box {
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px
+	background: #845623;
+	float: left;
+	/*width: 80px;
+	height: 70px;*/
+	
+	padding: 10px;
+	padding-bottom: 10px solid #ccc;
+}
+
+.box + .box {
+	margin-left: 10px;
+}
 
 
 .div-shadow {
 	width: 200px;
 	height: 200px;
+	float: left;
+	margin-left: 250px;
 	background: #FFFFFF;
 	box-shadow: 10px 20px 4px rgba(0,0,0,.4) inset;
 }
