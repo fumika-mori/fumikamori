@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+li:nth-of-type(even) {
+	background: #FF6769;
+}
+
+body {
+	background: #eee;
+}
+
+.maru-test {
+	width: 200px;
+	height: 200px;
+	/*background: #F38A8C;*/
+	/*border-radius: 30px 15px;*/
+	/*border-bottom-right-radius: 30px;*/
+	/*border-radius: 10px 20px 30px;*/
+	/*border-radius: 50%;*/
+	/*background-image:  linear-gradient(skyblue, blue);*/
+	/* top, bottom, left, right*/
+	/*background-image:  linear-gradient(to top left, skyblue, blue);*/
+	/*background-image: radial-gradient(ellipse 60px 30px at 30px 40px, skyblue, blue);*/
+	/*background-image: radial-gradient(circle 20px at 30px 40px, skyblue, blue);*/
+	background-image: repeating-radial-gradient(pink, black 6px);
+}
+
+.transition {
+	width: 100px;
+	height: 50px;
+	background: skyblue;
+	-webkit-animation-name: slidein;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: .1s;
+}
+
+@-webkit-keyframes slidein {
+	0% {
+		margin-left: 100%;
+		background: white;
+	}
+	70% {
+		margin-left: 50%;
+		background: blue;
+	}
+	100% {
+		margin-left: 0%;
+	}
+}
+
+
+
+.div-shadow {
+	width: 200px;
+	height: 200px;
+	background: #FFFFFF;
+	box-shadow: 10px 20px 4px rgba(0,0,0,.4) inset;
+}
