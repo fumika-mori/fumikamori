@@ -3,6 +3,33 @@
 
 /* header */
 
+header {
+	text-align: left;
+}
+
+.mainmenu ul {
+	list-style: none;
+	display: block;
+}
+
+.mainmenu li a {
+	position: absolute;
+	right: 40px;
+	text-decoration: none;
+	color: #868686;
+	float: left;
+	overflow: hidden;
+	display: inline-block;
+	padding: 0 5px;
+	margin: 0 0 30px 40px;
+	font-size: 15px;
+}
+
+.header-logo img {
+	height: 50px;
+	width: 120px;
+	margin-left: 300px;
+}
 
 /* main */
 
